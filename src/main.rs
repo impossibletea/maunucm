@@ -2,7 +2,7 @@ fn main() {
     let mut input = String::new();
     match std::io::stdin().read_line(&mut input) {
         Ok(_) => {},
-        Err(_)  => input = r#"KpuH}|{"#.to_string()
+        Err(_)  => input = r#"KpuH}I{"#.to_string()
     }
 
     let result: String = input
@@ -25,7 +25,7 @@ fn maun_um(letter: &str) -> String {
         "д"             => "g",
         "Е" | "Ё" | "Э" => "E",
         "е" | "ё" | "э" => "e",
-        "Ж" | "ж"       => "}|{",
+        "Ж" | "ж"       => "}I{",
         "З" | "з"       => "3",
         "И" | "Й"       => "U",
         "и" | "й"       => "u",
